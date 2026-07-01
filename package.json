@@ -1,0 +1,12 @@
+{
+  "name": "asif-resume",
+  "version": "1.0.0",
+  "description": "Portfolio of Asif Mansuri - Presales Engineer & AV Technology Expert",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 4000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asif Mansuri | Presales Engineer & AV Technology Expert</title>
+  <meta name="description" content="Portfolio of Asif Mansuri – Presales Engineer at LOGIC AV Products with expertise in Home Automation, AV Technology, Lightware UCX, and Business Development. Based in Pune, Maharashtra." />
+  <meta name="keywords" content="Asif Mansuri, Presales Engineer, AV Technology, Home Automation, Lightware UCX, Pune" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Canvas Particle BG -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"           class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about"          class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience"     class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#education"      class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#skills"         class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#contact"        class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="mailto:asif31227@gmail.com" class="nav-cta" id="nav-hire-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <span class="nav-logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></span>
+    </div>
+    <ul>
+      <li><a href="#hero"           class="mob-link">🏠 Home</a></li>
+      <li><a href="#about"          class="mob-link">👤 About</a></li>
+      <li><a href="#experience"     class="mob-link">💼 Experience</a></li>
+      <li><a href="#education"      class="mob-link">🎓 Education</a></li>
+      <li><a href="#certifications" class="mob-link">🏅 Certifications</a></li>
+      <li><a href="#skills"         class="mob-link">⚡ Skills</a></li>
+      <li><a href="#contact"        class="mob-link">✉️ Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-content">
+
+      <div class="hero-top-badge">
+        <span class="badge-pulse"></span>
+        <span>Open to Opportunities</span>
+      </div>
+
+      <!-- Avatar -->
+      <div class="avatar-scene">
+        <div class="avatar-halo"></div>
+        <div class="avatar-ring-outer">
+          <div class="avatar-ring-inner">
+            <div class="avatar-core">AM</div>
+          </div>
+        </div>
+        <div class="avatar-orbit">
+          <div class="orbit-dot orbit-dot-1"></div>
+          <div class="orbit-dot orbit-dot-2"></div>
+          <div class="orbit-dot orbit-dot-3"></div>
+        </div>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-first">Asif</span>
+        <span class="name-last gradient-text">Mansuri</span>
+      </h1>
+
+      <div class="hero-role-wrap">
+        <span class="hero-role-text" id="typedRole"></span>
+        <span class="type-cursor">|</span>
+      </div>
+
+      <p class="hero-location">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Pune District, Maharashtra, India
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary" id="hero-contact-btn">
+          <span>Get In Touch</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#experience" class="btn-glass" id="hero-work-btn">
+          <span>View Journey</span>
+        </a>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value" data-target="6" data-suffix="+">0+</span>
+          <span class="stat-desc">Years Experience</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="5" data-suffix="">0</span>
+          <span class="stat-desc">Companies</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="2" data-suffix="">0</span>
+          <span class="stat-desc">Certifications</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="100" data-suffix="%">0%</span>
+          <span class="stat-desc">Client Focus</span>
+        </div>
+      </div>
+
+      <!-- Social strip -->
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/asif-mansuri" target="_blank" class="social-pill" id="hero-linkedin">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/asif-mansuri
+        </a>
+        <a href="mailto:asif31227@gmail.com" class="social-pill" id="hero-email">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          asif31227@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="scroll-cue" id="scrollCue">
+      <span class="scroll-cue-text">Scroll</span>
+      <div class="scroll-wheel"><div class="scroll-wheel-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-sub">Bridging the gap between technology and client success</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <p class="about-desc">
+            I'm a <strong>Presales Engineer</strong> and <strong>Mechanical Engineering graduate</strong> with over <strong>6 years of professional experience</strong> across EdTech, BPO, and AV technology sectors. I specialize in understanding complex client requirements and translating them into tailored, impactful solutions.
+          </p>
+          <p class="about-desc">
+            Currently at <strong>LOGIC AV Products</strong> and <strong>Online Instruments</strong>, I work with cutting-edge AV and instrumentation technologies, leveraging my <strong>Lightware Taurus UCX</strong> certification to deliver world-class presales support and system design.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight-item reveal-left" style="--delay:0.1s">
+              <div class="ahi-icon">🎯</div>
+              <div class="ahi-text">
+                <h4>Client-Centric Approach</h4>
+                <p>Deep focus on understanding and solving real client pain points with precision</p>
+              </div>
+            </div>
+            <div class="about-highlight-item reveal-left" style="--delay:0.2s">
+              <div class="ahi-icon">⚙️</div>
+              <div class="ahi-text">
+                <h4>AV & Automation Expert</h4>
+                <p>Lightware UCX certified with hands-on Home Automation & AV Systems experience</p>
+              </div>
+            </div>
+            <div class="about-highlight-item reveal-left" style="--delay:0.3s">
+              <div class="ahi-icon">📈</div>
+              <div class="ahi-text">
+                <h4>Sales-Driven Professional</h4>
+                <p>Proven track record across UK sales, EdTech presales & B2B business development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal-right">
+          <div class="info-card glass-card tilt-card">
+            <div class="info-card-header">
+              <div class="info-card-icon">💼</div>
+              <h3>Quick Profile</h3>
+            </div>
+            <ul class="info-rows">
+              <li>
+                <span class="ir-key">Name</span>
+                <span class="ir-val">Asif Mansuri</span>
+              </li>
+              <li>
+                <span class="ir-key">Current Role</span>
+                <span class="ir-val highlight-val">Presales Engineer</span>
+              </li>
+              <li>
+                <span class="ir-key">Location</span>
+                <span class="ir-val">Pune, Maharashtra 🇮🇳</span>
+              </li>
+              <li>
+                <span class="ir-key">Education</span>
+                <span class="ir-val">B.E. Mechanical Eng.</span>
+              </li>
+              <li>
+                <span class="ir-key">Experience</span>
+                <span class="ir-val highlight-val">6+ Years</span>
+              </li>
+              <li>
+                <span class="ir-key">Email</span>
+                <span class="ir-val"><a href="mailto:asif31227@gmail.com">asif31227@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="ir-key">LinkedIn</span>
+                <span class="ir-val"><a href="https://linkedin.com/in/asif-mansuri" target="_blank">asif-mansuri</a></span>
+              </li>
+            </ul>
+            <a href="mailto:asif31227@gmail.com" class="btn-primary full-width mt-1" id="about-contact-btn">Contact Me →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-sub">6+ years of progressive growth across diverse industries</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- LOGIC AV -->
+        <div class="tl-item reveal">
+          <div class="tl-connector">
+            <div class="tl-dot active-dot">
+              <div class="tl-dot-inner"></div>
+              <div class="tl-dot-ring"></div>
+            </div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow logic-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo logic-logo">LA</div>
+              <div class="tl-info">
+                <h3>Presales Engineer</h3>
+                <span class="tl-company">LOGIC AV Products</span>
+              </div>
+              <span class="tl-status-badge">● Live</span>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Jul 2024 – Present · 2 yrs 1 mo</span>
+              <span class="tl-meta-chip">📍 Pune · On-site</span>
+              <span class="tl-meta-chip">⏱ Full-time</span>
+            </div>
+            <p class="tl-desc">Driving presales operations for cutting-edge AV products. Engage with architects, consultants and end-clients to understand technical requirements and deliver tailored AV solutions that exceed expectations. Responsible for product demonstrations, BOQ preparation and post-sales support coordination.</p>
+            <div class="tl-tags">
+              <span class="tag">AV Technology</span>
+              <span class="tag">Presales</span>
+              <span class="tag">Client Solutions</span>
+              <span class="tag">BOQ Preparation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online Instruments -->
+        <div class="tl-item reveal" style="--delay:0.1s">
+          <div class="tl-connector">
+            <div class="tl-dot active-dot">
+              <div class="tl-dot-inner"></div>
+              <div class="tl-dot-ring"></div>
+            </div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow oi-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo oi-logo">OI</div>
+              <div class="tl-info">
+                <h3>Presales Engineer</h3>
+                <span class="tl-company">Online Instruments</span>
+              </div>
+              <span class="tl-status-badge">● Live</span>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Jul 2024 – Present · 2 yrs 1 mo</span>
+              <span class="tl-meta-chip">📍 On-site · Full-time</span>
+            </div>
+            <p class="tl-desc">Providing technical consultation and solution design for clients in the instrumentation and measurement domain. Simultaneously managing presales cycles, from requirement gathering to proposal submission, ensuring high conversion and satisfaction rates.</p>
+            <div class="tl-tags">
+              <span class="tag">Instrumentation</span>
+              <span class="tag">Technical Sales</span>
+              <span class="tag">Solution Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Mahindra -->
+        <div class="tl-item reveal" style="--delay:0.15s">
+          <div class="tl-connector">
+            <div class="tl-dot">
+              <div class="tl-dot-inner"></div>
+            </div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow tm-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo tm-logo">TM</div>
+              <div class="tl-info">
+                <h3>Customer Relations Advisor – UK Sales</h3>
+                <span class="tl-company">Tech Mahindra Business Services</span>
+              </div>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Jan 2022 – Jul 2024 · 2 yrs 7 mos</span>
+              <span class="tl-meta-chip">📍 Pune Division, Maharashtra</span>
+            </div>
+            <p class="tl-desc">Managed customer relationships for UK-based clients at a leading BPO. Handled complex sales queries, maintained high CSAT scores, and drove revenue growth through effective cross-selling and upselling strategies in a fast-paced environment.</p>
+            <div class="tl-tags">
+              <span class="tag">Customer Relations</span>
+              <span class="tag">UK Sales</span>
+              <span class="tag">CRM</span>
+              <span class="tag">BPO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BYJU'S Senior -->
+        <div class="tl-item reveal" style="--delay:0.2s">
+          <div class="tl-connector">
+            <div class="tl-dot">
+              <div class="tl-dot-inner"></div>
+            </div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow bj-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo bj-logo">BJ</div>
+              <div class="tl-info">
+                <h3>Senior Pre-Sales Associate</h3>
+                <span class="tl-company">BYJU'S</span>
+              </div>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Nov 2021 – Dec 2021 · 2 mos</span>
+              <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
+            </div>
+            <p class="tl-desc">Led presales activities for BYJU's EdTech platform, mentoring junior associates and handling high-value prospects with tailored educational solutions pitched to parents and students across India.</p>
+            <div class="tl-tags">
+              <span class="tag">EdTech</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Mentorship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BYJU'S Associate -->
+        <div class="tl-item reveal" style="--delay:0.25s">
+          <div class="tl-connector">
+            <div class="tl-dot">
+              <div class="tl-dot-inner"></div>
+            </div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow bj-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo bj-logo">BJ</div>
+              <div class="tl-info">
+                <h3>Pre-Sales Associate</h3>
+                <span class="tl-company">BYJU'S</span>
+              </div>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Nov 2020 – Nov 2021 · 1 yr 1 mo</span>
+              <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
+            </div>
+            <p class="tl-desc">Engaged prospective students and parents to understand learning goals and presented BYJU's programs as solutions. Consistently exceeded monthly targets through consultative selling approach.</p>
+            <div class="tl-tags">
+              <span class="tag">EdTech</span>
+              <span class="tag">Sales</span>
+              <span class="tag">Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BYJU'S Trainee -->
+        <div class="tl-item reveal" style="--delay:0.3s">
+          <div class="tl-connector">
+            <div class="tl-dot">
+              <div class="tl-dot-inner"></div>
+            </div>
+          </div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-card-glow bj-glow"></div>
+            <div class="tl-header">
+              <div class="tl-logo bj-logo">BJ</div>
+              <div class="tl-info">
+                <h3>Business Development Trainee</h3>
+                <span class="tl-company">BYJU'S</span>
+              </div>
+            </div>
+            <div class="tl-meta-row">
+              <span class="tl-meta-chip">📅 Aug 2020 – Sep 2020 · 2 mos</span>
+              <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
+            </div>
+            <p class="tl-desc">Began professional journey with BYJU's, mastering business development fundamentals, prospecting techniques, client engagement strategies and CRM tools from the ground up.</p>
+            <div class="tl-tags">
+              <span class="tag">Business Development</span>
+              <span class="tag">Prospecting</span>
+              <span class="tag">Sales Training</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <p class="section-sub">A strong academic foundation in engineering and sciences</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card glass-card tilt-card reveal" style="--delay:0.1s">
+          <div class="edu-card-glow"></div>
+          <div class="edu-icon-box">🎓</div>
+          <div class="edu-degree-badge">B.E.</div>
+          <div class="edu-body">
+            <span class="edu-years">2016 – 2020</span>
+            <h3>Bachelor of Engineering</h3>
+            <p class="edu-field">Mechanical Engineering</p>
+            <p class="edu-institute">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              JD College of Engineering, Khandala
+            </p>
+          </div>
+          <div class="edu-footer-tag">Maharashtra, India</div>
+        </div>
+
+        <div class="edu-card glass-card tilt-card reveal" style="--delay:0.2s">
+          <div class="edu-card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(0,212,255,0.15), transparent 70%);"></div>
+          <div class="edu-icon-box" style="background: linear-gradient(135deg,rgba(0,212,255,0.2),rgba(108,99,255,0.2));">📚</div>
+          <div class="edu-degree-badge" style="background: linear-gradient(135deg,var(--secondary),var(--primary));">HSC</div>
+          <div class="edu-body">
+            <span class="edu-years">2014 – 2016</span>
+            <h3>High School Diploma</h3>
+            <p class="edu-field">Biology / Biological Sciences</p>
+            <p class="edu-institute">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              Mathuradas Mohta Science College, Nagpur
+            </p>
+          </div>
+          <div class="edu-footer-tag" style="background:rgba(0,212,255,0.08);border-color:rgba(0,212,255,0.2);color:var(--secondary);">Nagpur, Maharashtra</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Licenses &amp; <span class="gradient-text">Certifications</span></h2>
+        <p class="section-sub">Industry-recognized certifications validating my expertise</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- Lightware -->
+        <div class="cert-card glass-card tilt-card reveal" style="--delay:0.1s">
+          <div class="cert-card-glow"></div>
+          <div class="cert-verified-badge">✓ Verified</div>
+          <div class="cert-logo-box lw-box">LW</div>
+          <div class="cert-body">
+            <h3>Lightware – Taurus UCX Level 1</h3>
+            <span class="cert-org">Lightware</span>
+            <div class="cert-meta">
+              <div class="cert-meta-item">
+                <span class="cmi-label">Issued</span>
+                <span class="cmi-val">Feb 2025</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="cmi-label">Expires</span>
+                <span class="cmi-val">Feb 2027</span>
+              </div>
+            </div>
+            <div class="cert-id-row">
+              <span class="cert-id-label">Credential ID:</span>
+              <code class="cert-id-code">6pa62cklja</code>
+            </div>
+            <div class="cert-skills">
+              <span class="tag">Home Automation</span>
+              <span class="tag">AV Technology</span>
+              <span class="tag">UCX Protocol</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google -->
+        <div class="cert-card glass-card tilt-card reveal" style="--delay:0.2s">
+          <div class="cert-card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(234,67,53,0.15), transparent 60%);"></div>
+          <div class="cert-verified-badge" style="background:linear-gradient(135deg,#4285f4,#34a853);">✓ Google</div>
+          <div class="cert-logo-box gd-box">G</div>
+          <div class="cert-body">
+            <h3>Fundamentals of Digital Marketing</h3>
+            <span class="cert-org">Google Digital Unlocked</span>
+            <div class="cert-meta">
+              <div class="cert-meta-item">
+                <span class="cmi-label">Issued</span>
+                <span class="cmi-val">Apr 2019</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="cmi-label">Valid</span>
+                <span class="cmi-val">Lifetime</span>
+              </div>
+            </div>
+            <div class="cert-id-row">
+              <span class="cert-id-label">Credential ID:</span>
+              <code class="cert-id-code">QX4Q2RCU7</code>
+            </div>
+            <div class="cert-skills">
+              <span class="tag">Digital Marketing</span>
+              <span class="tag">SEO/SEM</span>
+              <span class="tag">Google Analytics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-sub">A versatile blend of technical and professional capabilities</p>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Technical bars -->
+        <div class="skill-block glass-card tilt-card reveal" style="--delay:0.1s">
+          <h3 class="skill-block-title">
+            <span class="skill-block-icon">🔧</span>Technical Skills
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Home Automation</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">AV Systems & Design</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Lightware Taurus UCX</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="85" style="--bar-color: linear-gradient(90deg,#6c63ff,#00d4ff);"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Python Programming</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="65" style="--bar-color: linear-gradient(90deg,#ff6b9d,#ffd166);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional bars -->
+        <div class="skill-block glass-card tilt-card reveal" style="--delay:0.2s">
+          <h3 class="skill-block-title">
+            <span class="skill-block-icon">💼</span>Professional Skills
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Presales Engineering</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Customer Relations</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="90" style="--bar-color: linear-gradient(90deg,#00d4ff,#6c63ff);"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Business Development</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name">Digital Marketing</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" data-width="75" style="--bar-color: linear-gradient(90deg,#4285f4,#34a853);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competency bubbles -->
+        <div class="skill-bubbles-block glass-card reveal" style="--delay:0.3s">
+          <h3 class="skill-block-title">
+            <span class="skill-block-icon">🌟</span>Core Competencies
+          </h3>
+          <div class="bubbles-cloud">
+            <span class="bubble b-lg">Home Automation</span>
+            <span class="bubble b-md">AV Presales</span>
+            <span class="bubble b-sm">Python</span>
+            <span class="bubble b-md">Client Engagement</span>
+            <span class="bubble b-sm">UK Sales</span>
+            <span class="bubble b-lg">Solution Design</span>
+            <span class="bubble b-md">Lightware UCX</span>
+            <span class="bubble b-sm">Digital Marketing</span>
+            <span class="bubble b-md">B2B Sales</span>
+            <span class="bubble b-sm">Technical Consulting</span>
+            <span class="bubble b-md">CRM Tools</span>
+            <span class="bubble b-sm">Team Leadership</span>
+            <span class="bubble b-md">BOQ Preparation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-sub">I'm always open to exciting opportunities and great conversations</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <div class="contact-left reveal">
+          <p class="contact-intro">Whether you want to discuss an AV project, explore a collaboration, or just say hello — my inbox is always open. Let's build something great together!</p>
+
+          <div class="contact-items">
+            <a href="mailto:asif31227@gmail.com" class="contact-item glass-card" id="contact-email-card">
+              <div class="ci-icon email-ci">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-value">asif31227@gmail.com</span>
+              </div>
+              <span class="ci-arrow">→</span>
+            </a>
+
+            <a href="https://linkedin.com/in/asif-mansuri" target="_blank" class="contact-item glass-card" id="contact-linkedin-card">
+              <div class="ci-icon linkedin-ci">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">linkedin.com/in/asif-mansuri</span>
+              </div>
+              <span class="ci-arrow">→</span>
+            </a>
+
+            <div class="contact-item glass-card" id="contact-location-card">
+              <div class="ci-icon location-ci">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="ci-text">
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Pune District, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="availability-card glass-card">
+            <div class="avail-dot"></div>
+            <div class="avail-text">
+              <strong>Available for Opportunities</strong>
+              <p>Open to full-time, consulting, and presales engineering roles in AV/Automation sector</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal-right" id="contactForm" onsubmit="handleContactForm(event)">
+          <h3 class="form-title">Send a Message 💬</h3>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-field">
+              <label for="femail">Your Email</label>
+              <input type="email" id="femail" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Project collaboration / Opportunity..." />
+          </div>
+          <div class="form-field">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="I'd love to connect about..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="form-submit-btn">
+            <span id="btn-text">Send Message ✈️</span>
+          </button>
+          <div class="form-success" id="formSuccessMsg">
+            🎉 Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></span>
+        <p>Asif Mansuri · Presales Engineer & AV Technology Expert</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:asif31227@gmail.com" id="footer-email-link">asif31227@gmail.com</a>
+        <span>·</span>
+        <a href="https://linkedin.com/in/asif-mansuri" target="_blank" id="footer-linkedin-link">LinkedIn</a>
+        <span>·</span>
+        <a href="#hero" id="footer-top-link">Back to top ↑</a>
+      </div>
+      <p class="footer-copy">© 2026 Asif Mansuri · Crafted with passion &amp; precision 💙</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
