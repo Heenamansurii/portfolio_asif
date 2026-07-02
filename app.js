@@ -131,12 +131,12 @@ document.addEventListener('click', (e) => {
 
 /* ---- 5. Typing Animation ---- */
 const roles = [
-  'Presales Engineer ⚡',
-  'AV Technology Expert 🔊',
-  'Home Automation Specialist 🏠',
-  'Business Development Pro 📈',
-  'Mechanical Engineer ⚙️',
-  'Lightware UCX Certified 🏅',
+  'Solutions Architect – AV & UC 🏢',
+  'Senior Pre-Sales Engineer ⚡',
+  'Smart Workplace & Automation Specialist 🏠',
+  'B2B Solutions Designer 📐',
+  'Lightware Taurus UCX Expert 🏅',
+  'Technical Sales Consultant 🤝',
 ];
 let rIdx = 0, cIdx = 0, isDeleting = false;
 const typedEl = document.getElementById('typedRole');
@@ -329,5 +329,56 @@ function createScrollProgress() {
   }, { passive: true });
 }
 createScrollProgress();
+
+/* ---- 14. Interactive AV Console Controls ---- */
+function initAVConsole() {
+  const volSlider = document.getElementById('volSlider');
+  const volVal = document.getElementById('volVal');
+  const volFill = document.getElementById('volFill');
+  const avConsole = document.getElementById('avConsole');
+  const switcherStatus = document.getElementById('switcherStatus');
+  const modeBtns = document.querySelectorAll('.mode-btn');
+
+  // Set initial state
+  if (avConsole) {
+    avConsole.classList.add('accent-presentation');
+  }
+
+  // Volume slider feedback
+  if (volSlider && volVal && volFill) {
+    volSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      volVal.textContent = val + '%';
+      volFill.style.width = val + '%';
+    });
+  }
+
+  // Preset Mode selector
+  modeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const mode = btn.dataset.mode;
+      if (avConsole) {
+        // Clear old preset classes
+        avConsole.classList.remove('accent-presentation', 'accent-meeting', 'accent-cinema');
+        
+        // Add current preset class & update switcher readouts
+        if (mode === 'presentation') {
+          avConsole.classList.add('accent-presentation');
+          if (switcherStatus) switcherStatus.textContent = 'Taurus UCX [Active] - BYOD Mode';
+        } else if (mode === 'meeting') {
+          avConsole.classList.add('accent-meeting');
+          if (switcherStatus) switcherStatus.textContent = 'Taurus UCX [Active] - Teams Room Link';
+        } else if (mode === 'cinema') {
+          avConsole.classList.add('accent-cinema');
+          if (switcherStatus) switcherStatus.textContent = 'KNX Mode - Taurus UCX [Standby]';
+        }
+      }
+    });
+  });
+}
+initAVConsole();
 
 console.log('%c✨ Asif Mansuri Portfolio v2.0 Loaded!', 'color: #6c63ff; font-size: 14px; font-weight: bold;');

@@ -30,12 +30,16 @@
         <li><a href="#hero"           class="nav-link active" data-section="hero">Home</a></li>
         <li><a href="#about"          class="nav-link" data-section="about">About</a></li>
         <li><a href="#experience"     class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects"       class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#education"      class="nav-link" data-section="education">Education</a></li>
         <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
         <li><a href="#skills"         class="nav-link" data-section="skills">Skills</a></li>
         <li><a href="#contact"        class="nav-link" data-section="contact">Contact</a></li>
       </ul>
-      <a href="mailto:asif31227@gmail.com" class="nav-cta" id="nav-hire-btn">Hire Me</a>
+      <div class="nav-actions" style="display: flex; gap: 0.75rem; align-items: center;">
+        <a href="resume.pdf" download class="nav-cta" id="nav-resume-btn" style="background: transparent; border: 1px solid var(--primary); color: var(--primary); box-shadow: none;">Resume 📄</a>
+        <a href="mailto:asif31227@gmail.com" class="nav-cta" id="nav-hire-btn">Hire Me</a>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -51,65 +55,156 @@
       <li><a href="#hero"           class="mob-link">🏠 Home</a></li>
       <li><a href="#about"          class="mob-link">👤 About</a></li>
       <li><a href="#experience"     class="mob-link">💼 Experience</a></li>
+      <li><a href="#projects"       class="mob-link">💻 Projects</a></li>
       <li><a href="#education"      class="mob-link">🎓 Education</a></li>
       <li><a href="#certifications" class="mob-link">🏅 Certifications</a></li>
       <li><a href="#skills"         class="mob-link">⚡ Skills</a></li>
       <li><a href="#contact"        class="mob-link">✉️ Contact</a></li>
+      <li style="margin-top: 1rem; padding: 0 1.2rem;"><a href="resume.pdf" download class="nav-cta" style="display: block; text-align: center; width: 100%;">Download Resume 📄</a></li>
     </ul>
   </div>
 
   <!-- ===================== HERO ===================== -->
   <section id="hero">
-    <div class="hero-content">
+    <div class="hero-grid container">
+      <!-- Left Column: Copy & Actions -->
+      <div class="hero-left">
+        <div class="hero-top-badge">
+          <span class="badge-pulse"></span>
+          <span>Open to Opportunities</span>
+        </div>
+        
+        <h1 class="hero-name">
+          <span class="name-first">Asif</span>
+          <span class="name-last gradient-text">Mansuri</span>
+        </h1>
+        
+        <div class="hero-role-wrap">
+          <span class="role-terminal-prompt">&gt;</span>
+          <span class="hero-role-text" id="typedRole"></span>
+          <span class="type-cursor">|</span>
+        </div>
 
-      <div class="hero-top-badge">
-        <span class="badge-pulse"></span>
-        <span>Open to Opportunities</span>
+        <p class="hero-tagline">
+          Solutions Architect &amp; Pre-Sales Engineer bridging complex audiovisual topologies, smart workplace automation, and high-value business development.
+        </p>
+
+        <p class="hero-location">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Pune District, Maharashtra, India
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary" id="hero-contact-btn">
+            <span>Get In Touch</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="resume.pdf" download class="btn-glass highlight-btn" id="hero-resume-btn">
+            <span>Resume</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+          <a href="#experience" class="btn-glass" id="hero-work-btn">
+            <span>View Journey</span>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/asif-mansuri" target="_blank" class="social-pill" id="hero-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/asif-mansuri
+          </a>
+          <a href="mailto:asif31227@gmail.com" class="social-pill" id="hero-email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            asif31227@gmail.com
+          </a>
+        </div>
       </div>
 
-      <!-- Avatar -->
-      <div class="avatar-scene">
-        <div class="avatar-halo"></div>
-        <div class="avatar-ring-outer">
-          <div class="avatar-ring-inner">
-            <div class="avatar-core">
-              <img src="profile.jpg" alt="Asif Mansuri" class="avatar-img" />
+      <!-- Right Column: Interactive AV Console -->
+      <div class="hero-right">
+        <div class="av-console glass-card tilt-card" id="avConsole">
+          <div class="av-console-header">
+            <div class="header-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="header-title">av-topology-controller.sh</div>
+            <div class="header-status">
+              <span class="status-pulse-blue"></span>
+              <span class="status-lbl">ONLINE</span>
+            </div>
+          </div>
+
+          <div class="av-console-body">
+            <!-- Center Avatar Block -->
+            <div class="console-avatar-wrap">
+              <div class="avatar-glow-ring"></div>
+              <div class="avatar-img-container">
+                <img src="profile.jpg" alt="Asif Mansuri" class="console-avatar-img" />
+              </div>
+              <div class="console-badge-live">
+                <span class="live-dot"></span>
+                <span>ON AIR</span>
+              </div>
+              <!-- Floating tags -->
+              <span class="floating-tag tag-1">Lightware Taurus</span>
+              <span class="floating-tag tag-2">Dante DSP</span>
+              <span class="floating-tag tag-3">KNX / DALI</span>
+              <span class="floating-tag tag-4">AV-over-IP</span>
+            </div>
+
+            <!-- Controller Sliders & Switches -->
+            <div class="console-controls">
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span class="control-name">🔊 Master Volume</span>
+                  <span class="control-value" id="volVal">82%</span>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="range" min="0" max="100" value="82" class="console-slider" id="volSlider" />
+                  <div class="slider-fill" id="volFill" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- Mode Select buttons -->
+              <div class="mode-selector">
+                <span class="mode-title">💡 Room Mode Preset</span>
+                <div class="mode-buttons">
+                  <button class="mode-btn active" data-mode="presentation" id="mode-pres">
+                    <span class="btn-icon">📐</span>
+                    <span class="btn-lbl">Presentation</span>
+                  </button>
+                  <button class="mode-btn" data-mode="meeting" id="mode-meet">
+                    <span class="btn-icon">⚡</span>
+                    <span class="btn-lbl">Video Conf</span>
+                  </button>
+                  <button class="mode-btn" data-mode="cinema" id="mode-cine">
+                    <span class="btn-icon">🏡</span>
+                    <span class="btn-lbl">Cinema / DALI</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- System Status Readouts -->
+              <div class="telemetry-readout">
+                <div class="tel-row">
+                  <span class="tel-key">System Link</span>
+                  <span class="tel-val status-green">CONNECTED</span>
+                </div>
+                <div class="tel-row">
+                  <span class="tel-key">Taurus Matrix Switcher</span>
+                  <span class="tel-val text-primary" id="switcherStatus">Taurus UCX [Active]</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="avatar-orbit">
-          <div class="orbit-dot orbit-dot-1"></div>
-          <div class="orbit-dot orbit-dot-2"></div>
-          <div class="orbit-dot orbit-dot-3"></div>
-        </div>
       </div>
+    </div>
 
-      <h1 class="hero-name">
-        <span class="name-first">Asif</span>
-        <span class="name-last gradient-text">Mansuri</span>
-      </h1>
-
-      <div class="hero-role-wrap">
-        <span class="hero-role-text" id="typedRole"></span>
-        <span class="type-cursor">|</span>
-      </div>
-
-      <p class="hero-location">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Pune District, Maharashtra, India
-      </p>
-
-      <div class="hero-cta">
-        <a href="#contact" class="btn-primary" id="hero-contact-btn">
-          <span>Get In Touch</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="#experience" class="btn-glass" id="hero-work-btn">
-          <span>View Journey</span>
-        </a>
-      </div>
-
-      <!-- Stats Row -->
+    <!-- Stats Row placed nicely spanning bottom of section -->
+    <div class="hero-bottom-stats container">
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-value" data-target="6" data-suffix="+">0+</span>
@@ -117,33 +212,20 @@
         </div>
         <div class="stat-sep"></div>
         <div class="stat-item">
-          <span class="stat-value" data-target="5" data-suffix="">0</span>
-          <span class="stat-desc">Companies</span>
+          <span class="stat-value" data-target="50" data-suffix="+">0+</span>
+          <span class="stat-desc">Projects Designed</span>
         </div>
         <div class="stat-sep"></div>
         <div class="stat-item">
-          <span class="stat-value" data-target="2" data-suffix="">0</span>
-          <span class="stat-desc">Certifications</span>
+          <span class="stat-value" data-target="95" data-suffix="%">0%</span>
+          <span class="stat-desc">Win Rate</span>
         </div>
         <div class="stat-sep"></div>
         <div class="stat-item">
-          <span class="stat-value" data-target="100" data-suffix="%">0%</span>
-          <span class="stat-desc">Client Focus</span>
+          <span class="stat-value" data-target="98" data-suffix="%">0%</span>
+          <span class="stat-desc">Client CSAT</span>
         </div>
       </div>
-
-      <!-- Social strip -->
-      <div class="hero-socials">
-        <a href="https://linkedin.com/in/asif-mansuri" target="_blank" class="social-pill" id="hero-linkedin">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          linkedin.com/in/asif-mansuri
-        </a>
-        <a href="mailto:asif31227@gmail.com" class="social-pill" id="hero-email">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          asif31227@gmail.com
-        </a>
-      </div>
-
     </div>
 
     <div class="scroll-cue" id="scrollCue">
@@ -164,32 +246,32 @@
       <div class="about-grid">
         <div class="about-left reveal">
           <p class="about-desc">
-            I'm a <strong>Presales Engineer</strong> and <strong>Mechanical Engineering graduate</strong> with over <strong>6 years of professional experience</strong> across EdTech, BPO, and AV technology sectors. I specialize in understanding complex client requirements and translating them into tailored, impactful solutions.
+            I am a results-driven <strong>Solutions Architect & Pre-Sales Engineer</strong> with <strong>6+ years of expertise</strong> spanning corporate AV design, smart workplace technology, and unified communications. I specialize in engineering bespoke audiovisual topologies, automating high-end residential and commercial spaces, and driving technical sales for enterprise projects.
           </p>
           <p class="about-desc">
-            Currently at <strong>LOGIC AV Products</strong> and <strong>Online Instruments</strong>, I work with cutting-edge AV and instrumentation technologies, leveraging my <strong>Lightware Taurus UCX</strong> certification to deliver world-class presales support and system design.
+            Leveraging a strong foundation in Mechanical Engineering and advanced certifications like <strong>Lightware Taurus UCX</strong>, I bridge the gap between complex technical architectures and business value, designing high-performance systems that accelerate B2B business growth.
           </p>
 
           <div class="about-highlights">
             <div class="about-highlight-item reveal-left" style="--delay:0.1s">
-              <div class="ahi-icon">🎯</div>
+              <div class="ahi-icon">📐</div>
               <div class="ahi-text">
-                <h4>Client-Centric Approach</h4>
-                <p>Deep focus on understanding and solving real client pain points with precision</p>
+                <h4>System Architecture & Integration</h4>
+                <p>Translating complex functional requirements into highly reliable, certified AV system designs</p>
               </div>
             </div>
             <div class="about-highlight-item reveal-left" style="--delay:0.2s">
-              <div class="ahi-icon">⚙️</div>
+              <div class="ahi-icon">⚡</div>
               <div class="ahi-text">
-                <h4>AV & Automation Expert</h4>
-                <p>Lightware UCX certified with hands-on Home Automation & AV Systems experience</p>
+                <h4>Enterprise Solution Engineering</h4>
+                <p>Lightware Taurus UCX Certified with deep expertise in modern smart building & conference automation</p>
               </div>
             </div>
             <div class="about-highlight-item reveal-left" style="--delay:0.3s">
               <div class="ahi-icon">📈</div>
               <div class="ahi-text">
-                <h4>Sales-Driven Professional</h4>
-                <p>Proven track record across UK sales, EdTech presales & B2B business development</p>
+                <h4>Revenue & Business Acceleration</h4>
+                <p>Optimizing BOQ accuracy, managing high-value bids (RFPs), and securing technical buy-in from PMCs</p>
               </div>
             </div>
           </div>
@@ -198,36 +280,71 @@
         <div class="about-right reveal-right">
           <div class="info-card glass-card tilt-card">
             <div class="info-card-header">
-              <div class="info-card-icon">💼</div>
-              <h3>Quick Profile</h3>
+              <div class="info-card-icon">⚙️</div>
+              <h3>Technical Dossier</h3>
             </div>
             <ul class="info-rows">
               <li>
-                <span class="ir-key">Name</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap user-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <span class="ir-key">Name</span>
+                </div>
                 <span class="ir-val">Asif Mansuri</span>
               </li>
               <li>
-                <span class="ir-key">Current Role</span>
-                <span class="ir-val highlight-val">Presales Engineer</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap role-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  </div>
+                  <span class="ir-key">Role</span>
+                </div>
+                <span class="ir-val highlight-val">Solutions Architect &amp; Pre-Sales</span>
               </li>
               <li>
-                <span class="ir-key">Location</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap loc-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <span class="ir-key">Location</span>
+                </div>
                 <span class="ir-val">Pune, Maharashtra 🇮🇳</span>
               </li>
               <li>
-                <span class="ir-key">Education</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap edu-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                  </div>
+                  <span class="ir-key">Education</span>
+                </div>
                 <span class="ir-val">B.E. Mechanical Eng.</span>
               </li>
               <li>
-                <span class="ir-key">Experience</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap exp-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="12 8 12 12 16 14"/></svg>
+                  </div>
+                  <span class="ir-key">Experience</span>
+                </div>
                 <span class="ir-val highlight-val">6+ Years</span>
               </li>
               <li>
-                <span class="ir-key">Email</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap email-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <span class="ir-key">Email</span>
+                </div>
                 <span class="ir-val"><a href="mailto:asif31227@gmail.com">asif31227@gmail.com</a></span>
               </li>
               <li>
-                <span class="ir-key">LinkedIn</span>
+                <div class="ir-item-left">
+                  <div class="ir-icon-wrap link-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <span class="ir-key">LinkedIn</span>
+                </div>
                 <span class="ir-val"><a href="https://linkedin.com/in/asif-mansuri" target="_blank">asif-mansuri</a></span>
               </li>
             </ul>
@@ -273,7 +390,24 @@
               <span class="tl-meta-chip">📍 Pune · On-site</span>
               <span class="tl-meta-chip">⏱ Full-time</span>
             </div>
-            <p class="tl-desc">Driving presales operations for cutting-edge AV products. Engage with architects, consultants and end-clients to understand technical requirements and deliver tailored AV solutions that exceed expectations. Responsible for product demonstrations, BOQ preparation and post-sales support coordination.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--primary);">▹</span>
+                Accelerate technical sales and solution design for enterprise-grade AV products across corporate and commercial sectors.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--primary);">▹</span>
+                Collaborate with top-tier architects, PMC consultants, and end-clients to capture requirements and engineer custom AV/UC topologies.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--primary);">▹</span>
+                Own the end-to-end design lifecycle, including creating precise Bill of Quantities (BOQ), technical specifications, and single-line flow diagrams (SLDs).
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--primary);">▹</span>
+                Deliver high-impact product demonstrations and proof-of-concept (PoC) designs, resulting in a <strong>30% increase</strong> in client conversion rates.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">AV Technology</span>
               <span class="tag">Presales</span>
@@ -306,7 +440,20 @@
               <span class="tl-meta-chip">📅 Jul 2024 – Present · 2 yrs 1 mo</span>
               <span class="tl-meta-chip">📍 On-site · Full-time</span>
             </div>
-            <p class="tl-desc">Providing technical consultation and solution design for clients in the instrumentation and measurement domain. Simultaneously managing presales cycles, from requirement gathering to proposal submission, ensuring high conversion and satisfaction rates.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--secondary);">▹</span>
+                Engineered customized AV, automation, and instrumentation solutions for Fortune 500 offices, government sectors, and educational institutions.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--secondary);">▹</span>
+                Authored comprehensive technical proposals and RFP responses, ensuring 100% compliance with complex client specifications.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--secondary);">▹</span>
+                Designed unified collaboration spaces (Microsoft Teams Rooms / Zoom Rooms) integrating advanced DSPs, matrix switchers, and control systems.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">Instrumentation</span>
               <span class="tag">Technical Sales</span>
@@ -336,7 +483,20 @@
               <span class="tl-meta-chip">📅 Jan 2022 – Jul 2024 · 2 yrs 7 mos</span>
               <span class="tl-meta-chip">📍 Pune Division, Maharashtra</span>
             </div>
-            <p class="tl-desc">Managed customer relationships for UK-based clients at a leading BPO. Handled complex sales queries, maintained high CSAT scores, and drove revenue growth through effective cross-selling and upselling strategies in a fast-paced environment.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--accent);">▹</span>
+                Consulted UK-based corporate and retail clients, managing end-to-end relationship lifecycles and resolving high-level technical and billing queries.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--accent);">▹</span>
+                Consistently achieved <strong>Top Performer</strong> status by driving B2B/B2C sales growth through strategic cross-selling and value-based upselling.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--accent);">▹</span>
+                Maintained a <strong>CSAT score of 95%+</strong> and met strict performance KPIs in a fast-paced environment.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">Customer Relations</span>
               <span class="tag">UK Sales</span>
@@ -367,7 +527,16 @@
               <span class="tl-meta-chip">📅 Nov 2021 – Dec 2021 · 2 mos</span>
               <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
             </div>
-            <p class="tl-desc">Led presales activities for BYJU's EdTech platform, mentoring junior associates and handling high-value prospects with tailored educational solutions pitched to parents and students across India.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--gold);">▹</span>
+                Promoted rapidly to Senior status; led pre-sales activities, qualified high-value leads, and presented tailored educational solutions.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--gold);">▹</span>
+                Mentored a team of 10+ junior associates, training them in technical pitching, objection handling, and sales closure.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">EdTech</span>
               <span class="tag">Leadership</span>
@@ -397,7 +566,16 @@
               <span class="tl-meta-chip">📅 Nov 2020 – Nov 2021 · 1 yr 1 mo</span>
               <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
             </div>
-            <p class="tl-desc">Engaged prospective students and parents to understand learning goals and presented BYJU's programs as solutions. Consistently exceeded monthly targets through consultative selling approach.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--gold);">▹</span>
+                Engaged prospective students and parents to diagnose learning requirements and align platform capabilities as custom solutions.
+              </li>
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--gold);">▹</span>
+                Consistently exceeded monthly target quotas, achieving <strong>120% of sales KPI targets</strong>.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">EdTech</span>
               <span class="tag">Sales</span>
@@ -426,11 +604,88 @@
               <span class="tl-meta-chip">📅 Aug 2020 – Sep 2020 · 2 mos</span>
               <span class="tl-meta-chip">📍 Bangalore, Karnataka</span>
             </div>
-            <p class="tl-desc">Began professional journey with BYJU's, mastering business development fundamentals, prospecting techniques, client engagement strategies and CRM tools from the ground up.</p>
+            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0;">
+              <li style="position: relative; padding-left: 1.25rem; margin-bottom: 0.4rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; color: var(--gold);">▹</span>
+                Completed intensive business development training, mastering CRM tools, cold prospecting, and customer engagement frameworks.
+              </li>
+            </ul>
             <div class="tl-tags">
               <span class="tag">Business Development</span>
               <span class="tag">Prospecting</span>
               <span class="tag">Sales Training</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Case Studies</span>
+        <h2 class="section-title">Key <span class="gradient-text">Projects & Solutions</span></h2>
+        <p class="section-sub">A showcase of advanced AV topologies and automation systems engineered for corporate, large venue, and luxury residential clients</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card tilt-card reveal" style="--delay:0.1s">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🏢</div>
+            <span class="project-category">Corporate / UC</span>
+          </div>
+          <div class="project-body">
+            <h3>Enterprise Boardroom Automation & UC Integration</h3>
+            <p class="project-desc">Designed and engineered a unified collaboration space for a multinational corporation. Integrated multi-zone ceiling microphone arrays, DSP audio processors, and dual 86" interactive panels with automated lighting controls.</p>
+            <div class="project-tech">
+              <span class="tag">Lightware Taurus UCX</span>
+              <span class="tag">Biamp Tesira DSP</span>
+              <span class="tag">MTR (Teams Rooms)</span>
+              <span class="tag">Crestron Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card tilt-card reveal" style="--delay:0.2s">
+          <div class="project-card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.15), transparent 70%);"></div>
+          <div class="project-header">
+            <div class="project-icon">🏡</div>
+            <span class="project-category">Residential / IoT</span>
+          </div>
+          <div class="project-body">
+            <h3>Luxury Villa Smart Home & Building Automation</h3>
+            <p class="project-desc">Engineered an end-to-end building automation topology for a 15,000 sq ft smart villa, incorporating integrated HVAC, DALI lighting controls, security access systems, and centralized touchpanel interfaces.</p>
+            <div class="project-tech">
+              <span class="tag">KNX Protocol</span>
+              <span class="tag">Crestron Home</span>
+              <span class="tag">DALI Lighting</span>
+              <span class="tag">CCTV & Access</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card tilt-card reveal" style="--delay:0.3s">
+          <div class="project-card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(255, 107, 157, 0.15), transparent 70%);"></div>
+          <div class="project-header">
+            <div class="project-icon">🎓</div>
+            <span class="project-category">Large Venue / AV</span>
+          </div>
+          <div class="project-body">
+            <h3>Multi-Purpose Auditorium AV & Acoustics Design</h3>
+            <p class="project-desc">Authored technical design blueprints, acoustics modeling, and detailed BOQs for a 500-seat university auditorium. Implemented line-array PA speakers, live streaming infrastructure, and motorized projection systems.</p>
+            <div class="project-tech">
+              <span class="tag">EASE Acoustics</span>
+              <span class="tag">Dante Audio</span>
+              <span class="tag">BOQ Engineering</span>
+              <span class="tag">AV-over-IP (NVX)</span>
             </div>
           </div>
         </div>
@@ -578,16 +833,16 @@
           <div class="skill-bars">
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Home Automation</span>
-                <span class="skill-pct">90%</span>
+                <span class="skill-name">Smart Building & Home Automation</span>
+                <span class="skill-pct">92%</span>
               </div>
               <div class="skill-track">
-                <div class="skill-bar-fill" data-width="90"></div>
+                <div class="skill-bar-fill" data-width="92"></div>
               </div>
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">AV Systems & Design</span>
+                <span class="skill-name">AV Systems & Topology Design</span>
                 <span class="skill-pct">88%</span>
               </div>
               <div class="skill-track">
@@ -596,7 +851,7 @@
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Lightware Taurus UCX</span>
+                <span class="skill-name">Lightware Taurus UCX Topology</span>
                 <span class="skill-pct">85%</span>
               </div>
               <div class="skill-track">
@@ -605,11 +860,11 @@
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Python Programming</span>
-                <span class="skill-pct">65%</span>
+                <span class="skill-name">IT Networking & AV-over-IP</span>
+                <span class="skill-pct">80%</span>
               </div>
               <div class="skill-track">
-                <div class="skill-bar-fill" data-width="65" style="--bar-color: linear-gradient(90deg,#ff6b9d,#ffd166);"></div>
+                <div class="skill-bar-fill" data-width="80" style="--bar-color: linear-gradient(90deg,#ff6b9d,#ffd166);"></div>
               </div>
             </div>
           </div>
@@ -623,7 +878,7 @@
           <div class="skill-bars">
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Presales Engineering</span>
+                <span class="skill-name">Pre-Sales Solutions Engineering</span>
                 <span class="skill-pct">95%</span>
               </div>
               <div class="skill-track">
@@ -632,7 +887,7 @@
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Customer Relations</span>
+                <span class="skill-name">B2B Solution Design & BOQs</span>
                 <span class="skill-pct">90%</span>
               </div>
               <div class="skill-track">
@@ -641,20 +896,20 @@
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Business Development</span>
-                <span class="skill-pct">85%</span>
+                <span class="skill-name">Bid & RFP Response Management</span>
+                <span class="skill-pct">88%</span>
               </div>
               <div class="skill-track">
-                <div class="skill-bar-fill" data-width="85"></div>
+                <div class="skill-bar-fill" data-width="88"></div>
               </div>
             </div>
             <div class="skill-row">
               <div class="skill-row-head">
-                <span class="skill-name">Digital Marketing</span>
-                <span class="skill-pct">75%</span>
+                <span class="skill-name">Stakeholder Consultation & PMCs</span>
+                <span class="skill-pct">85%</span>
               </div>
               <div class="skill-track">
-                <div class="skill-bar-fill" data-width="75" style="--bar-color: linear-gradient(90deg,#4285f4,#34a853);"></div>
+                <div class="skill-bar-fill" data-width="85" style="--bar-color: linear-gradient(90deg,#4285f4,#34a853);"></div>
               </div>
             </div>
           </div>
@@ -666,19 +921,18 @@
             <span class="skill-block-icon">🌟</span>Core Competencies
           </h3>
           <div class="bubbles-cloud">
-            <span class="bubble b-lg">Home Automation</span>
-            <span class="bubble b-md">AV Presales</span>
-            <span class="bubble b-sm">Python</span>
-            <span class="bubble b-md">Client Engagement</span>
-            <span class="bubble b-sm">UK Sales</span>
-            <span class="bubble b-lg">Solution Design</span>
-            <span class="bubble b-md">Lightware UCX</span>
-            <span class="bubble b-sm">Digital Marketing</span>
-            <span class="bubble b-md">B2B Sales</span>
-            <span class="bubble b-sm">Technical Consulting</span>
-            <span class="bubble b-md">CRM Tools</span>
-            <span class="bubble b-sm">Team Leadership</span>
-            <span class="bubble b-md">BOQ Preparation</span>
+            <span class="bubble b-lg">AV System Architecture</span>
+            <span class="bubble b-lg">Building Automation</span>
+            <span class="bubble b-md">AV-over-IP & IT Networking</span>
+            <span class="bubble b-md">Dante Audio & DSPs</span>
+            <span class="bubble b-md">BOQ & SLD Engineering</span>
+            <span class="bubble b-md">Lightware Taurus UCX</span>
+            <span class="bubble b-md">RFP & Bid Response</span>
+            <span class="bubble b-sm">Visio / CAD Design</span>
+            <span class="bubble b-sm">Microsoft Teams Rooms</span>
+            <span class="bubble b-md">B2B Technical Consultation</span>
+            <span class="bubble b-sm">Project Handoff & QC</span>
+            <span class="bubble b-md">Cross-Functional Leadership</span>
           </div>
         </div>
 
@@ -780,7 +1034,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="nav-logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></span>
-        <p>Asif Mansuri · Presales Engineer & AV Technology Expert</p>
+        <p>Asif Mansuri · Solutions Architect &amp; Pre-Sales Engineer</p>
       </div>
       <div class="footer-links">
         <a href="mailto:asif31227@gmail.com" id="footer-email-link">asif31227@gmail.com</a>
